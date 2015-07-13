@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Reaction</title>
+</head>
+<body>
+
+
+<p id="populateText"></p>
+
+
+
+	<script type="text/javascript">
+
+	// this is an empty string
+	var myString = "";
+
+	var myArray = ["pan", "gohan", "platanos", "crisps"];
+
+
+		for(var i = 0; i < myArray.length; i++){
+			// alert(myArray[i]);
+
+			// when this loops myArray[0] will be inserted into myString[i] + " "; this is the space
+			// the second time myArray[1] will be inserted into myString[i] + " ";
+			// the third time myArray[2] ...etc.
+			myString += myArray[i] + " ";
+		}
+
+		document.getElementById("populateText").innerHTML = myString;
+
+	</script>
+
+</body>
+</html>

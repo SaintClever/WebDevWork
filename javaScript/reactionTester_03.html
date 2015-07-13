@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Reaction Tester</title>
+	<style type="text/css">
+
+	body {
+		font-family: Verdana, Geneva, sans-serif;
+	}
+
+	#box {
+		position: relative;
+/*	position or margin can both work randomizing the div location */
+		background-color: red;
+		width: 200px;
+		height: 200px;
+		visibility: hidden;
+/*	or display: none; can work instead of visibility: hidden; */
+	}
+
+	.bold {
+		font-weight: bold;
+	}
+
+
+	</style>
+</head>
+<body>
+<h1>Test your reaction time!</h1>
+<p>CLick on the squares and circles as quickly as you can!</p>
+<p class="bold">Your time: <span id="time">0</span>s</p>
+<div id="box"></div>
+
+
+<script type="text/javascript" src="scripts.js"></script>
+
+
+</body>
+</html>

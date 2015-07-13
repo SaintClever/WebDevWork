@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FadeIn and Out</title>
+	<style type="text/css">
+		#circle {
+			background-color: green;
+			width: 100px;
+			height: 100px;
+			border-radius: 100px;
+		}
+	</style>
+
+	<script type="text/javascript" src="jquery.min.js">
+	</script>
+</head>
+<body>
+
+<div id="circle"></div>
+
+	<script type="text/javascript">
+		
+
+$("#circle").click(function(){
+
+	// first the we describe what we want to change in curly braces or bracket and 1500 represents the time of the transition: ({width: "300px"}, 1500)
+
+	$(this).animate({
+		width: "300px",
+		height: "300px",
+		borderRadius: "150px",
+		marginLeft: "100px",
+		marginTop: "100px"
+
+	}, 1500);
+
+});
+
+
+	</script>
+
+
+</body>
+</html>

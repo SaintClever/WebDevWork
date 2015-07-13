@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Practice</title>
+</head>
+<body>
+
+<input id="myInput" type="text" value="Input text"/>
+<button id="myBtn">Insert text</button>
+<div id="randomText">This is some random text</div>
+
+
+<script type="text/javascript">
+
+// var newText = document.getElementById("myInput").value;
+
+	document.getElementById("myBtn").onclick = function(){
+		var newText = document.getElementById("myInput").value;
+		document.getElementById("randomText").innerHTML = newText;
+	}
+
+</script>
+
+
+</body>
+</html>

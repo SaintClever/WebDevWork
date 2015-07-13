@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Learning JQuery</title>
+	<script type="text/javascript" src="jquery.min.js"></script>
+
+<style type="text/css">
+	.square {
+		background-color: red;
+		width: 100px;
+		height: 100px;
+	}
+
+	#circle {
+		background-color: green;
+		width: 100px;
+		height: 100px;
+		border-radius: 100px;
+	}
+</style>
+
+</head>
+<body>
+<div class="square"></div>
+<br />
+<div class="square"></div>
+<br />
+<div id="circle"></div>
+
+
+	<script type="text/javascript">
+	//the typeof function allows us to examine a variable
+	// if (typeof jQuery != "undefined"){
+	// 	alert("jQuery installed");
+	// } else {
+	// 	alert("jQuery is not installed");
+	// }
+
+	//Without JQuery
+	document.getElementById("circle").onclick = function(){
+
+	}
+
+	// With JQuery
+	// circled clicked
+	$("#circle").click(function(){
+		alert("Circle Clicked!");
+	})
+
+	// square clicked
+	$(".square").click(function(){
+		alert("Square Clicked!");
+	})
+
+	// div clicked applies to all the html div tags
+	$("div").click(function(){
+		alert("div clicked!");
+	})
+	</script>
+
+</body>
+</html>

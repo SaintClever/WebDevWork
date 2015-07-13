@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FadeIn and Out</title>
+	<script type="text/javascript" src="jquery.min.js">
+	</script>
+</head>
+<body>
+
+<p id="fadeMe">Drifting a shore...bye bye</p>
+<button id="fadeOut">Poof be gone!</button>
+<button id="fadeIn">Poof reappear!</button>
+
+	<script type="text/javascript">
+		
+		
+	$("#fadeOut").click(function(){
+		// instead of numbers you can use fast or slow
+		$("#fadeMe").fadeOut("slow", function(){
+			alert("FadeOut complete!");
+		});
+	});
+
+
+	$("#fadeIn").click(function(){
+		$("#fadeMe").fadeIn(2000, function(){
+			alert("FadeIn complete!");
+		});
+	});
+
+
+	</script>
+
+
+</body>
+</html>

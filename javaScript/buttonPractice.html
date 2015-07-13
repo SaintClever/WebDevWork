@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+	<title>Learning JavaScript</title>
+</head>
+<body>
+<!-- uses classes and id for javascript to access elements -->
+<button id="textChanger">Change first div text</button>
+<div id="firstDiv">This is some text</div>
+
+<button id="textAppender">Append some text</button>
+<div id="secondDiv">Javascript is...</div>
+	
+<button id="textCreator">Create some text</button>
+<div id="emptyDiv"></div>
+
+		<script type="text/Javascript">
+
+		// change text with btn
+		document.getElementById("textChanger").onclick = function(){
+			document.getElementById("firstDiv").innerHTML = "This is awesome!";
+		}
+
+		// append text with btn
+		document.getElementById("textAppender").onclick = function(){
+			// document.getElementById("secondDiv").innerHTML = document.getElementById("secondDiv").innerHTML + "great!";
+			// or
+			document.getElementById("secondDiv").innerHTML += "great!";
+		}
+ 
+		// create text with btn
+		document.getElementById("textCreator").onclick = function(){
+			document.getElementById("emptyDiv").innerHTML = "<ul><li>cat</li><li>dog</li></ul>";
+		}
+
+	</script>
+</body>
+</html>
