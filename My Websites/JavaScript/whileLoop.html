@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>While Loop</title>
+</head>
+<body>
+
+
+<p id="populateText"></p>
+
+
+
+<script type="text/javascript">
+
+	var myString = "";
+	var myArray = ["kaki", "banana", "momo", "ringo"];
+
+	var i = 0;
+	while(i < myArray.length){
+		myString += myArray[i] + " ";
+		i++; 
+	}
+
+	//versus 
+
+	// for(i = 0; i < myArray.length; i++){
+	// 	myString += myArray[i] + " ";
+	// }
+
+	document.getElementById("populateText").innerHTML = myString;
+
+</script>
+
+</body>
+</html>

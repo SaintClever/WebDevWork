@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AJAX CALL</title>
+	<style type="text/css">
+		#circle {
+			background-color: green;
+			width: 100px;
+			height: 100px;
+			border-radius: 100px;
+		}
+	</style>
+
+	<script type="text/javascript" src="jquery.min.js">
+	</script>
+</head>
+<body>
+
+<h1>Asyncronous Javascript And XML</h1>
+
+	<script>
+
+	// so we have a long string
+	var string = "Regex is great!";
+	var string_I = "Regex is Great!";
+	var string_G = "Regex is great and great!";
+
+	// we want to find the regular experesion, our desired word.
+	var regex =/great/;
+
+	// finds either GREAT, great, gREAT (no case sensitive)
+	var regex_I = /great/i;
+
+	// the g means global, therefore finds every existing "great" within the string
+	var regex_G = /great/g;
+
+	// we use the match(); method
+	var result = string.match(regex); 
+	var result_I = string_I.match(regex_I);
+	var result_G = string_G.match(regex_G);
+
+	alert(result);
+	alert(result_I);
+	alert(result_G);
+	
+	</script>
+
+
+</body>
+</html>

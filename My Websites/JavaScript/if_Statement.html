@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Reaction</title>
+</head>
+<body>
+
+<p>What is the weather?</p>
+<input id="weather" />
+<button id="myBtn">Submit</button>
+
+
+	<script type="text/javascript">
+
+		// var x = 2;
+
+		// if(x == 1) {
+		// 	alert("x is equal to 1!");
+
+		// } else {
+		// 	alert("x is not 1!")
+		// }
+
+
+		document.getElementById("myBtn").onclick = function() {
+
+			if (document.getElementById("weather").value == "rain") {
+				alert("Rain! No session today");
+			} else {
+				alert("Sweet, lets have a session!");
+			}
+		}
+
+	</script>
+
+</body>
+</html>

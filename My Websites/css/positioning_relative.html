@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+    <title>Example Domain</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <style type="text/css">
+        #purple {
+            background-color: purple;
+            width: 300px;
+            height: 300px;
+
+            /* If i want to move this div around I use relative */
+            
+            position: relative;
+            top: -100px; /* is equivalent to bottom: 100px; */
+            left: -100px; /* is equivalent to right: 100px; */
+
+            /* however if you provide a z-index for each div you can manipulate which goes on top of which */
+            /* note: you most provide a position property and the greatest number is stacked above the smaller */
+            z-index: 0;
+        }
+
+        #green {
+            background-color: green;
+            width: 300px;
+            height: 300px;
+            /* however if you provide a z-index for each div you can manipulate which goes on top of which */
+            /* note: you most provide a position property and the greatest number is stacked above the smaller */
+            position: relative;
+            z-index: 1;
+        }
+    </style>    
+
+</head>
+
+<body>
+
+<!-- because this appears first in the html this appears above the green div -->
+<!-- however if you provide a z-index for each div you can manipulate which goes on top of which -->
+<!-- note: you most provide a position property and the greatest number is stacked above the smaller -->
+<div id="purple">
+I'm floating to the left
+</div>
+
+<div id="green">
+I'm floating to the right
+</div>
+
+<div class="clearMe">
+<p>I'll just stay here</p>
+</div>
+
+
+</body>
+</html>
+

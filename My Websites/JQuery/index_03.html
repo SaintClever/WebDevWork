@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Learning JQuery</title>
+	<script type="text/javascript" src="jquery.min.js"></script>
+
+<style type="text/css">
+
+	#circle {
+		background-color: green;
+		width: 100px;
+		height: 100px;
+		border-radius: 100px;
+	}
+
+	.square {
+		background-color: red;
+		width: 100px;
+		height: 100px;
+		margin-top: 10px;
+	}
+
+
+</style>
+
+</head>
+<body>
+<div id="circle"></div>
+<div class="square"></div>
+<div class="square"></div>
+
+<iframe src="http://www.cnn.com/"></iframe>
+
+
+	<script type="text/javascript">
+
+	// Returning & changing an attribute of an element with JQuery
+	$("#circle").click(function(){
+		// after the comma with put in the new request
+		$("iframe").attr("src", "http://www.freecodecamp.com/");
+	});
+
+
+	</script>
+
+</body>
+</html>

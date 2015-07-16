@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Learning JQuery</title>
+	<script type="text/javascript" src="jquery.min.js"></script>
+
+<style type="text/css">
+
+	#circle {
+		background-color: green;
+		width: 100px;
+		height: 100px;
+		border-radius: 100px;
+	}
+
+	#square {
+		background-color: red;
+		width: 100px;
+		height: 100px;
+	}
+
+</style>
+
+</head>
+<body>
+<div id="square"></div>
+<p id="para_hover">Hover over the square.</p>
+
+<div id="circle"></div>
+<p>This is some text</p>
+
+
+	<script type="text/javascript">
+
+	//Without JQuery
+	document.getElementById("circle").onclick = function(){
+		document.getElementByTagName("p").innerHMTL = "The text has been changed!";
+	}
+
+	// With JQuery
+	// circled clicked
+	$("#circle").click(function(){
+		// alert("Circled clicked!");
+
+		//selecting the html p tag
+		$("p").html("The text has been changed!");
+		alert($("p").html());
+	});
+
+	// lets try hover
+	$("#square").hover(function(){
+		$("#para_hover").html("Thanks for hovering over me!!!");
+	});
+
+	</script>
+
+</body>
+</html>

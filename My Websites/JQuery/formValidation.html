@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Validation</title>
+	
+	<style type="text/css">
+
+	#wrapper {
+		margin: 0 auto; /*this centers my code*/
+		width: 600px;
+		font-family: helvetica;
+		font-size: 1.2em;
+	}
+
+	input {
+		width: 300px;
+		height: 30px;
+		padding: 5px;
+		border-radius: 5px;
+		font-size: 1.2em;
+		border: 1px solid gray;
+		margin-top: 7px;
+	}
+
+	label {
+		width: 200px;
+		float: left;
+		padding-top: 7px;
+	}
+
+	#submitButton {
+		height: 50px;
+		margin-left: 200px;
+		width: 100px;
+	}
+
+	</style>
+
+</head>
+<body>
+
+
+
+
+
+<div id="wrapper">
+
+	<h1>Form Validation</h1>
+
+	<form id="validationForm">
+
+		<label for="email">Email</label>
+		<input name="email" />
+
+		<label for="phone">Telephone</label>
+		<input name="phone" />
+
+		<label for="pass">Password</label>
+		<input name="pass" type="password" />
+
+		<label for="password">Confirm Password</label>
+		<input name="password" type="password" />
+
+		<input id="submitButton" type="submit" value="Submit" />
+
+	</form>
+
+</div>
+
+
+	<script>
+
+	$("#validationForm").submit(function(event){
+
+		event.preventDefault();
+		alert('test');
+	
+	});
+
+	</script>
+
+
+</body>
+</html>

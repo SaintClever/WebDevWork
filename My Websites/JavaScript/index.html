@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+	<title>Learning JavaScript</title>
+</head>
+<body>
+<!-- uses classes and id for javascript to access elements -->
+	<p id="text">Some Text</p>
+
+	<button id="myButton">You know you want to click me...</button>
+</body>
+ 
+ 
+
+	<script type="text/Javascript">
+		// alert Some Text
+		alert(document.getElementById("text").innerHTML);
+
+		// change the content
+		document.getElementById("text").innerHTML = "Some more text";
+
+		// 
+		document.getElementById("myButton").onclick = function(){
+			alert("Hi!");
+			document.write("INFO CLEARED!!!")
+		}
+	</script>
+
+</html>

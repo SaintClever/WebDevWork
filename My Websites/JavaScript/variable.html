@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mini Challenge</title>
+
+	<style type="text/css">
+		#circle {
+			background: red;
+			width: 200px;
+			height: 200px;
+			border-radius: 50%;
+		}
+	</style>
+
+</head>
+
+<body>
+
+<input id="myInput" type="text" value="test"/>
+<button id="stylesChanger">Change the text!</button>
+<div id="firstDiv">This is some text</div>
+
+
+
+	<script type="text/javascript">
+
+	var newText = document.getElementById("myInput").value;
+
+
+		document.getElementById("stylesChanger").onclick = function(){
+			var newText = document.getElementById("myInput").value;
+			document.getElementById("firstDiv").innerHTML = newText;
+		}
+		
+	</script>
+
+</body>
+</html>

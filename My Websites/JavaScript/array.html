@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mini Challenge</title>
+</head>
+
+<body>
+
+<input id="myInput" type="text" value="test"/>
+<button id="stylesChanger">Change the text!</button>
+<div id="firstDiv">This is some text</div>
+
+
+
+	<script type="text/javascript">
+
+	var myArray = new Array();
+
+	myArray[0] = "pizza";
+	myArray[1] = "chocolate";
+	console.log(myArray);
+
+
+	myOtherArray = ["Rain", "sunsine"];
+	myOtherArray.push("snow");
+
+	// the first "1" stands for the index location within the array. The second "1" represents how many indices you want to effect.
+	// only sunshine was removed
+	myOtherArray.splice(1, 1);
+	console.log(myOtherArray);
+
+	// if for example would would remove sunshine and shown
+	myOtherArray.splice(1, 2);
+	console.log(myOtherArray);
+
+
+	// splice can be used to add in items as well
+	myOtherArray.splice(1, 0, "add me at index one and don't remove any items", "add me index two");
+	console.log(myOtherArray);
+
+	// lets find the length of this array
+	console.log(myOtherArray.length);
+
+		document.getElementById("stylesChanger").onclick = function(){
+			document.getElementById("firstDiv").innerHTML = myArray[0];
+		}
+		
+	</script>
+
+</body>
+</html>

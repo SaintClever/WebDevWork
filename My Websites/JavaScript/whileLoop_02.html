@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>While Loop</title>
+</head>
+<body>
+
+
+<p>How many fingers are you holding up?</p>
+<input id="myNumber" />
+<button id="guess">Guess!</button>
+
+<script type="text/javascript">
+
+
+	document.getElementById("guess").onclick = function() {
+
+		var gotIt = false; var guesses = 1; var x;
+
+		while(gotIt == false){
+
+			var x = Math.random()
+			// guess can only be be between 1 - 5. If is above it will CRASH & BURN!!!
+			x *= 6;
+			x = Math.floor(x);
+
+			if (document.getElementById("myNumber").value == x) {
+				// alert("I got it!!! It was " + x);
+				gotIt = true;
+			} else {
+				guesses++;
+			}
+
+		}
+			alert("Got it!!! It was a " + x + ". It only took me " + guesses + " guesses!");
+	}
+
+</script>
+
+</body>
+</html>

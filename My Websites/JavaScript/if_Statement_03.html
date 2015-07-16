@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Reaction</title>
+</head>
+<body>
+
+<p>How many fingers am I holding up?</p>
+<input id="answer" />
+<button id="myBtn">Submit</button>
+
+
+	<script type="text/javascript">
+
+		// var x = 2;
+
+		// if(x == 1) {
+		// 	alert("x is equal to 1!");
+
+		// } else {
+		// 	alert("x is not 1!")
+		// }
+
+	document.getElementById("myBtn").onclick = function() {
+		var x = Math.random();
+		// to make the random number be 5 or below x has to be 6
+		x = 6 * x;
+		x = Math.floor(x);
+
+			if(x == document.getElementById("answer").value) {
+				alert("Thats correct! My number was " + x);
+			} else {
+				alert("Thats wrong! My number was " + x)
+			}
+	}
+
+	</script>
+
+</body>
+</html>
