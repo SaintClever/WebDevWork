@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Constant Contact</title>
+
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <style type="text/css">
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 300;
+  }
+
+/* Header */
+
+#header {
+  background-color: #3f6e98;
+  height: 40px;
+}
+
+#logo {
+  float: left;
+  color: white;
+  margin: 2px 0 0 10px;
+}
+
+#contact {
+  float: right;
+  color: white;
+  margin: 10px 10px 0 0;
+  position: relative;
+  bottom: 25px;
+}
+
+#contact li {
+  display: inline;
+}
+
+/* RadioBtn_01 */
+
+#radioBtn_01 {
+  float: left;
+}
+
+#radioBtn_01 li {
+  display: inline;
+  padding: 5px;
+  margin: 5px;
+  line-height: 40px;
+  right: 35px;
+}
+
+.hoverBtn {
+  border-radius: 100px;
+  border-style: solid;
+  border-color: gray;
+  background-color: white;
+}
+
+.hoverBtn:hover {
+  background-color: #eff7fb;
+}
+
+ul {
+  list-style-type: none;
+}
+
+
+/* Line */
+
+#line {
+  padding-top: 15px;
+  clear: both;
+  height: 1px;
+  border-bottom: 1px solid #E0E0E0;
+}
+
+
+#nextBtn {
+  font-size: 15px;
+  color: white;
+  border-radius: 5px;
+  background-color: #3f6e98;
+  width: 75px;
+  height: 50px;
+  border: none;
+  float: right;
+  position: relative;
+  top: 10px;
+  right: 50px;
+}
+
+
+/* RadioBtn_02 */
+
+#radioBtn_02 {
+  line-height: 40px;
+  margin: 10px;
+}
+
+#dropDown {
+  margin: 10px;
+}
+
+textarea {
+  resize: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  border: 1px solid #E0E0E0;
+  width: 100%;
+}
+
+#textArea {
+  background-color: #f8f8f8;
+  margin: 25px;
+  padding: 25px;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: #E0E0E0;
+  border-width: 1px;
+}
+
+#textArea input {
+  width: 300px;
+  height: 30px;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 1.2em;
+  border: 1px solid #E0E0E0;
+  margin-top: 7px;
+}
+
+/* dropDown */
+#masterTable {
+  margin-left: 25px;
+  padding-left: 25px;
+
+}
+
+table td {
+  padding: 5px;
+  margin: 5px;
+}
+
+select {
+  border: 1px solid #E0E0E0;
+  background-color: #eceeef;
+  width: 150px;
+  height: 45px;
+  font-size: 14px;
+  background: -webkit-linear-gradient(#ffffff, #E0E0E0); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#ffffff, #E0E0E0); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#ffffff, #E0E0E0); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#ffffff, #E0E0E0); /* Standard syntax */
+}
+
+
+/* RadioBtn */
+input[type='radio'] {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid teal;
+  border-radius: 50%;
+  outline: none;
+  box-shadow: 0 0 5px 0px gray inset;
+}
+
+input[type='radio']:hover {
+  box-shadow: 0 0 5px 0px teal inset;
+}
+
+input[type='radio']:before {
+  content: '';
+  display: block;
+  width: 60%;
+  height: 60%;
+  margin: 20% auto;    
+  border-radius: 50%;    
+}
+input[type='radio']:checked:before {
+  background: teal;
+}
+
+
+  </style>
+</head>
+<body>
+
+<div id="container">
+
+
+<div id="header">
+  <div id="logo">
+    <img src="assets/logo.jpg">
+  </div>
+
+  <div id="contact">
+      <ul>
+        <li><img src="assets/icon_01.jpg">855-339-0045</li>
+        <li><img src="assets/icon_02.jpg">MotoRoof</li>
+        <li><img src="assets/icon_03.jpg"></li>
+      </ul>
+  </div>
+</div>
+
+
+<div id="radioBtn_01">
+  <ul>
+    <li>
+      <button type="submit" class="hoverBtn">1</button>
+      Target Audience
+    </li>
+
+    <li>
+      <button type="submit" class="hoverBtn">2</button>
+      Ad creative
+    </li>
+
+    <li>
+      <button type="submit" class="hoverBtn">3</button>
+      Confirmation Email
+    </li>
+  </ul>
+</div>
+
+
+<button type="submit" id="nextBtn">Next</button>
+<div id="line"></div>
+
+<table id="masterTable">
+  <tbody>
+    <tr>
+      <td>
+      <div id="radioBtn_02">
+          Where are you looking for subscribers?
+        <ul>
+          <li><input type="radio" name="subscribers"> Specific Zip Code(s)</li>
+          <li><input type="radio" name="subscribers"> Specific State(s)</li>
+          <li><input type="radio" name="subscribers"> All of USA</li>
+        </ul>
+
+        <table>
+          <thead>
+            who are your best customers?
+          </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <select>
+                    <option value="Both males and females">Both males and females</option>
+                    <option value="Males only">Males only</option>
+                    <option value="Females only">Males only</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <select>
+                    <option value="Minimum age">Minimum age</option>
+                  </select>
+                </td>
+                <td>
+                <select>
+                  <option value="Maximum age">Maximum age</option>
+                </select>
+              </td>
+            </tr>
+          </tbody> 
+        </table>
+      </td>
+
+      <td>
+        <div id="textArea">
+          <p>
+          Enter one or more zip codes that ou want to target<br />
+          (separate each by comma)
+          </p>
+          <textarea rows="5" cols="40"></textarea><br />
+          
+          <p>
+          Optional - Enter maximum number of miles around each<br />
+          zp code targeted (numbers only)
+          </p>
+          <input name="email" id="email"/>
+        </div>
+      </td/>
+    </tr>
+  </tbody>
+</table>
+
+
+
+</div>
+
+
+<script scr="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!-- whatever you put in the resolution template is displayed through the above "{{> resolution}}" -->
+<template name="resolution">
+
+  <!-- this must have the exact key new used in the "Template.body.helpers" object (the output is displayed here)-->
+  <li class="{{#if checked}}checked{{/if}}">
+    {{#if isOwner}}
+    <input type="checkbox" checked="{{checked}}" class="toggle-checked">
+      <button class="toggle-private">
+        {{#if private}}
+            Private
+        {{else}}
+            Public
+        {{/if}}
+      </button>
+    {{/if}}
+    <span class="text">{{title}}</span>
+    {{#if isOwner}}
+      <button class="delete">Remove</button>
+    {{/if}}
+  </li>
+</template>

@@ -1,0 +1,32 @@
+<head>
+  <title>resolutions</title>
+</head>
+
+<body>
+<div class="container">
+
+<header>
+  <h1>Monthly Resolutions</h1>
+  
+  <label class="hide-finished">
+    <input type="checkbox" checked="{{hideFinished}}">
+    Hide Finished Resolutions
+  </label>
+
+  {{#if currentUser}}
+  <form class="new-resolution">
+    <input type="text" name="title" placeholder="A new resolution">
+    <input type="submit" value="Submit">
+  </form>
+  {{/if}}
+</header>
+
+<!-- this resolution is referencing the below resolution template -->  
+  <ul>
+    {{#each resolutions}} <!-- the opening of our array, which must be the EXACT name as the object within the "Template.body.helpers" (this begins the iteration through the object) -->
+      {{> resolution}} <!-- this must be the EXACT name as the template name below (this denotes that you have a template) -->
+    {{/each}} <!-- the closing of our array (this ends the iteration through the object) -->
+  </ul>
+{{> loginButtons}}
+</div>
+</body>

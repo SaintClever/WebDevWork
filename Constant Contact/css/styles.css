@@ -1,0 +1,17 @@
+      .box {
+        border: 1px solid #B0B6BB;
+        border-radius: 5px;
+        background-color: #F8F8F8;
+        padding: 25px;
+      }
+
+      #headerColor {
+        background-color: #406E98;
+        margin: 0 auto;
+        padding: 5px;
+        color: #ffffff;
+      }
+
+/*      .col-md-6.box {
+        visibility: hidden;
+      }*/

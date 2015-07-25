@@ -34,14 +34,9 @@
         color: #ffffff;
       }
 
-      #nextBtn {
-/*        margin-top: 10px;
-        line-height: 5px;
-        width: 100px;
-        height: 25px;
-        font: white;
-        background-color: red;*/
-      }
+/*      .col-md-6.box {
+        visibility: hidden;
+      }*/
 
     </style>
   </head>
@@ -103,7 +98,7 @@
       <p>Where are you looking for subscribers?</p>
       <form role="form">
         <div class="radio">
-          <label><input type="radio" name="optradio">Specific Zip Code(s)</label>
+          <label><input id="appear" type="radio" name="optradio">Specific Zip Code(s)</label>
         </div>
         <div class="radio">
           <label><input type="radio" name="optradio">Specific State(s)</label>
@@ -167,17 +162,10 @@
 </div>
 
 
-<script type="text/javascript">
-  
-  $(".col-md-6 box").css("visibility", "hidden");
-
-  $(".active").click(function(){
-    alert("hello");
-  });
-
-</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
   </body>
