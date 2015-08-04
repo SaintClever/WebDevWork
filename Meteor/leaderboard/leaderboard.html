@@ -1,0 +1,49 @@
+<head>
+  <title>Leaderboard</title>
+</head>
+<body>
+  <h1>Leaderboard</h1>
+  <!-- the {{> loginButtons}} is a ui sign-in package created by Meteor, therefore it's atomatically created within our html, no need for at template. -->
+  {{> loginButtons}}
+  <!-- With every {{> exampleTemplate}} we have to create a <template name="exampleTemplate"> -->
+  {{> leaderboard}}
+  {{> addPlayerForm}}
+</body>
+
+
+<!-- b) within the html file’s <template name=“leaderboard”> type {{#each player}} and end it with {{/each}}. 
+
+Lets get the name field from our collection and score by typing {{name}} and {{score}} within our each block. -->
+
+
+<template name="leaderboard">
+  <ul>
+    {{#each player}}
+      <li class="player {{selectedClass}}">{{name}} : {{score}}</li>
+    {{/each}}
+      <li>
+        <input type="button" id="increment" value="Give 5 Points">
+        <input type="button" id="decrement" value="Take 5 Points">
+        <input type="button" id="remove" value="Remove Player">
+      </li>
+
+    <!-- the "if" conditional is used to provent the user from viewing a nonexisting player -->
+    <!-- because we only desire the name we use "showSelectedPlayer.name -->
+    <!-- if we wanted to find the score we could use showSelectedPlayer.score within the if conditional -->
+    {{#if showSelectedPlayer}}
+      <li>Selected Player: {{showSelectedPlayer.name}}</li>
+    {{/if}}
+  </ul>
+</template>
+
+
+<!-- a new template named "addPlayerForm" is created for the form -->
+<!-- the if statement allows only a logged in user to have access to adding a user, hence the {{#if ****}}Statement -->
+<template name="addPlayerForm">
+{{#if currentUser}}
+  <form>
+    <input type="text" name="playerName" id="playerName">
+    <input type="submit" value="Add Player">
+  </form>
+  {{/if}}
+</template>

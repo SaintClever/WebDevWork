@@ -1,0 +1,4 @@
+/* to change the color of the background we create a class called selected */
+.selected{
+  background-color: yellow;
+}
