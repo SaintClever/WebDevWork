@@ -1,0 +1,55 @@
+(function () {
+  var scheme = (("https:" == document.location.protocol) ? "https" : "http");
+  var adnxs_domain = 'secure.adnxs.com';
+  var aol_domain = 'secure.leadback.advertising.com';
+  var rule = ["*", "*"];
+  if (scheme=='http') { adnxs_domain = 'ib.adnxs.com'; aol_domain = 'leadback.advertising.com';}
+  var el = document.createElement("div");
+  el.style["width"] = "1px";
+  el.style["height"] = "1px";
+  el.style["display"] = "inline";
+  var content = unescape('%3cimg%20height%3d%221%22%20width%3d%221%22%20style%3d%22border-style%3anone%3b%22%20alt%3d%22%22%20src%3d%22%5bprotocol%5d%3a//d.adroll.com/cm/r/out%22/%3e%0a%3cimg%20height%3d%221%22%20width%3d%221%22%20style%3d%22border-style%3anone%3b%22%20alt%3d%22%22%20src%3d%22%5bprotocol%5d%3a//d.adroll.com/cm/f/out%22/%3e%0a%3cimg%20height%3d%221%22%20width%3d%221%22%20style%3d%22border-style%3anone%3b%22%20alt%3d%22%22%20src%3d%22%5bprotocol%5d%3a//d.adroll.com/cm/b/out%22/%3e%0a%3cimg%20height%3d%221%22%20width%3d%221%22%20style%3d%22border-style%3anone%3b%22%20alt%3d%22%22%20src%3d%22%5bprotocol%5d%3a//d.adroll.com/cm/x/out%22/%3e%0a%3cimg%20height%3d%221%22%20width%3d%221%22%20style%3d%22border-style%3anone%3b%22%20alt%3d%22%22%20src%3d%22%5bprotocol%5d%3a//d.adroll.com/cm/l/out%22/%3e%0a%3cimg%20height%3d%221%22%20width%3d%221%22%20style%3d%22border-style%3anone%3b%22%20alt%3d%22%22%20src%3d%22%5bprotocol%5d%3a//d.adroll.com/cm/o/out%22/%3e%0a%3cimg%20height%3d%221%22%20width%3d%221%22%20style%3d%22border-style%3anone%3b%22%20alt%3d%22%22%20src%3d%22%5bprotocol%5d%3a//d.adroll.com/cm/g/out%3fgoogle_nid%3dadroll4%22/%3e%0a%3cimg%20height%3d%221%22%20width%3d%221%22%20alt%3d%22%22%20style%3d%22display%3anone%22%20src%3d%22https%3a//www.facebook.com/tr%3fid%3d557628451037783%26cd%5bsegment_eid%5d%3dPOJVL5IQ3ZA77A6VP6CEX2%26ev%3dNoScript%22%20/%3e%3cimg%20height%3d%221%22%20width%3d%221%22%20style%3d%22border-style%3anone%3b%22%20alt%3d%22%22%20src%3d%22%5bprotocol%5d%3a//googleads.g.doubleclick.net/pagead/viewthroughconversion/933633792/%3flabel%3dzsZWCJDckAsQgL6YvQM%26amp%3bguid%3dON%26amp%3bscript%3d0%26amp%3bord%3d%5bord%5d%22/%3e%0a%3cimg%20src%3d%22%5bprotocol%5d%3a//%5badnxs_domain%5d/seg%3fadd%3d1039517%26t%3d2%22%20width%3d%221%22%20height%3d%221%22/%3e%0a%3cimg%20height%3d%221%22%20width%3d%221%22%20alt%3d%22%22%20style%3d%22display%3anone%22%20src%3d%22https%3a//www.facebook.com/tr%3fid%3d557628451037783%26cd%5bsegment_eid%5d%3d6OQMF3HUMJHS7MJN76EUMY%26ev%3dNoScript%22%20/%3e%3cimg%20height%3d%221%22%20width%3d%221%22%20style%3d%22border-style%3anone%3b%22%20alt%3d%22%22%20src%3d%22%5bprotocol%5d%3a//googleads.g.doubleclick.net/pagead/viewthroughconversion/0/%3flabel%3dnull%26amp%3bguid%3dON%26amp%3bscript%3d0%26amp%3bord%3d%5bord%5d%22/%3e%0a%3cimg%20src%3d%22%5bprotocol%5d%3a//%5badnxs_domain%5d/seg%3fadd%3d3109467%26t%3d2%22%20width%3d%221%22%20height%3d%221%22/%3e%0a%3cimg%20height%3d%221%22%20width%3d%221%22%20alt%3d%22%22%20style%3d%22display%3anone%22%20src%3d%22https%3a//www.facebook.com/tr%3fid%3d557628451037783%26cd%5bsegment_eid%5d%3dV2IEZ2WEEBERNAGDH56XI5%26ev%3dNoScript%22%20/%3e%3cimg%20height%3d%221%22%20width%3d%221%22%20style%3d%22border-style%3anone%3b%22%20alt%3d%22%22%20src%3d%22%5bprotocol%5d%3a//googleads.g.doubleclick.net/pagead/viewthroughconversion/933633792/%3flabel%3d3IorCMSDoFYQgL6YvQM%26amp%3bguid%3dON%26amp%3bscript%3d0%26amp%3bord%3d%5bord%5d%22/%3e%0a%3cimg%20src%3d%22%5bprotocol%5d%3a//%5badnxs_domain%5d/seg%3fadd%3d2032745%26t%3d2%22%20width%3d%221%22%20height%3d%221%22/%3e%0a');
+  
+  content += __adroll.get_pid(".*", "", {"scheme":"html","attribute":"text","path":"div.sku","regular_expression":"#(\\S+)","regular_expression_replace":"\\1","is_required":false}, true, null, null);
+
+  try {
+  var pid = __adroll.extract_pid(".*", "", {"scheme":"html","attribute":"text","path":"div.sku","regular_expression":"#(\\S+)","regular_expression_replace":"\\1","is_required":false}, true, null, null);
+if(pid) {
+  if(!pid.product_action) {
+    pid.product_action = "ViewContent";
+  }
+  var product_id_param = "";
+  if(pid.product_id instanceof Array) {
+    product_id_param = "[";
+    for (var i = 0; i < pid.product_id.length; i++) {
+      var x = pid.product_id[i].replace("\"", "\\\"");
+      product_id_param += "\"" + x + "\"";
+      if (i < pid.product_id.length - 1) {
+        product_id_param += ",";
+      }
+    }
+    product_id_param = encodeURIComponent(product_id_param + "]");
+  } else {
+    product_id_param = encodeURIComponent(pid.product_id) + "_" + encodeURIComponent(pid.product_group);
+  }
+
+
+  content += "<img width=\"1\" height=\"1\" src=\"" + __adroll._srv("/fb/tr/?id=557628451037783" +
+             "&ev=" + encodeURIComponent(pid.product_action) +
+             "&cd[content_type]=product" +
+             "&cd[content_ids]=" + product_id_param +
+             "&cd[product_catalog_id]=1085295894832104") + "\">";
+}
+
+  } catch(e) {}
+
+  var r = Math.random()*10000000000000000;
+  content = content.replace(/\[ord\]/gi, r);
+  content = content.replace(/\[protocol\]/gi, scheme);
+  content = content.replace(/\[adnxs_domain\]/gi, adnxs_domain);
+  content = content.replace(/\[aol_domain\]/gi, aol_domain);
+  content = __adroll.replace_external_data(content);
+  el.innerHTML = content;
+  __adroll._head().appendChild(el);
+  if (typeof __adroll.set_pixel_cookie != 'undefined') {__adroll.set_pixel_cookie(adroll_adv_id, adroll_pix_id, "POJVL5IQ3ZA77A6VP6CEX2");}
+}());
